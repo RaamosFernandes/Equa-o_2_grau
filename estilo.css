@@ -1,0 +1,110 @@
+
+
+* {
+    margem :  0 ;
+    preenchimento :  0 ;
+    dimensionamento da caixa : caixa de borda;
+  }
+
+corpo {
+  família da fonte :  "Acme" , sem serifa;
+  tamanho da fonte :  20 px ;
+  cor :  # 2c3e50 ;
+  cor de fundo :  # ffffff ;
+}
+
+. main {
+  display : flex;
+  alinhar-itens : centro;
+  justificar-conteúdo : centro;
+  altura mínima :  100 vh ;
+}
+
+
+# img {
+largura :  60 % ;
+altura :  300 px ;
+}
+
+@media ( largura mínima :  500 px ) {
+  . calc-bhaskara {
+    display : flex;
+    alinhar-itens : centro;
+    justificar-conteúdo : centro;
+    largura máxima :  500 px ;
+    largura :  100 % ;
+    preenchimento :  1 em ;
+  }
+}
+
+. calc-bhaskara  h1 {
+  alinhamento de texto : centro;
+  decoração de texto : sublinhado;
+}
+
+. form {
+  display : flex;
+  justificar-conteúdo : centro;
+  alinhar-itens : centro;
+  direção flexível : coluna;
+  preenchimento :  0,3 em ;
+}
+
+. etiqueta do formulário  ,
+. botão de formulário  {
+  margem superior :  1 em ;
+}
+
+. entrada de formulário  ,
+. botão de formulário  {
+  tamanho da fonte : herdar;
+  família de fontes : herdar;
+  largura :  100 % ;
+  preenchimento :  0,5 em ;
+}
+
+. botão de formulário  {
+  cor de fundo :  # fbefff ;
+  cursor : ponteiro;
+  raio da borda :  0,3 em ;
+  largura :  50 % ;
+}
+
+. botão do formulário  : hover {
+  filtro :  opacidade ( 0,8 );
+}
+
+. botão do formulário  : ativo {
+  cor de fundo :  # ffefff ;
+  cor :  # 000 ;
+  filtro :  opacidade ( 0,8 );
+}
+
+. resultado {
+  display : flex;
+  justify-content : espaço entre;
+}
+
+. rótulo de resultado  {
+  margem :  1 rem ;
+}
+
+. alert {
+  display : bloco;
+  largura :  100 % ;
+  altura :  50 px ;
+  alinhamento de texto : centro;
+  altura da linha :  50 px ;
+  tamanho da fonte :  1,2 rem ;
+  estilo da fonte : itálico;
+  posição : fixa;
+  sombra da caixa :  0  0  4 px  # 333 ;
+  cor de fundo :  # ef5350 ;
+  cor :  # fff ;
+}
+
+tela @media e ( largura máxima :  500 px ) {
+  . alert {
+    inferior :  0 ;
+  }
+}
